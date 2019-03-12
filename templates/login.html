@@ -1,0 +1,9 @@
+<html>
+<body>
+    <h1>Login</h1>
+    {% for k,v in args.items() %}
+    <p>{{ k,v }}</p>
+    {% endfor %}
+    <a href="{{url_for('gconnect', state=args['state'])}}" class="btn btn-danger btn-block"><i class="fab fa-google"></i> Sign in with <b>Google</b></a>
+</body>
+</html>
